@@ -4,6 +4,12 @@ variable "enable_carbon_export" {
   description = "Enables the collection of carbon footprint report"
 }
 
+variable "create_costoptimizationhub_enrollment_status" {
+  type        = bool
+  default     = true
+  description = "Enables member account enrollment into AWS Cost Optimization Hub. Set to false if this is already managed elsewhere."
+}
+
 variable "enable_cost_recommendations_export" {
   type        = bool
   default     = true
